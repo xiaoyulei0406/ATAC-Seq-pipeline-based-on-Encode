@@ -1,0 +1,9 @@
+{
+    "Name" : "encode_atac_test1",
+    "Type" : "WDL",
+    "Description" : "A pipeline for ENCODE ATAC-seq",
+    "WorkDir" : "vol2/xtvol@yingyun01:yingyun01/data/output/encode/ATACseq",
+    "Wdl" : {
+	    "WorkflowFile" : "main.wdl"
+    }
+}

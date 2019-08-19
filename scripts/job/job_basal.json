@@ -1,0 +1,53 @@
+{
+    "Name" : "encode_atac_PEnocrt_GSM3320984_basal",
+    "Pipeline" : "ENCODE_ATACSEQ_V1",
+    "InputDataSet" : {
+        "WorkflowInput" : {
+            "ATAC.sample_info" : [
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320984_BASAL1_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320984_BASAL1_2.fastq.gz"]],
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320985_BASAL2_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320985_BASAL2_2.fastq.gz"]],
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320986_BASAL3_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320986_BASAL3_2.fastq.gz"]]
+            ],
+            "ATAC.sample_name" : ["GSM3320984_BASAL1","GSM3320985_BASAL2","GSM3320986_BASAL3"],
+            "ATAC.Ref_fa" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+            "ATAC.bowtie2_idx_tar" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/bowtie2_index/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.tar",
+            "ATAC.adapters_R1" : ["AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTCAGATGTG","CAAGCAGAAGACGGCATACGAGATCATGCCTAGTCTCGTGGGCTCGGAGATGT","CAAGCAGAAGACGGCATACGAGATCCTCTCTGGTCTCGTGGGCTCGGAGATGT"],
+            "ATAC.adapters_R2" : ["AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTCAGATGTG","CAAGCAGAAGACGGCATACGAGATCATGCCTAGTCTCGTGGGCTCGGAGATGT","CAAGCAGAAGACGGCATACGAGATCCTCTCTGGTCTCGTGGGCTCGGAGATGT"],
+            "ATAC.chrsz" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/hg38.chrom.sizes",
+            "ATAC.blacklist" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/hg38.blacklist.bed.gz",
+            "ATAC.gensz" : "hs",
+            "ATAC.paired_end" : true,
+            "ATAC.paired_ends" : [true,true,true],
+            "ATAC.description" : "ChIP-seq on hg38"
+        }
+    },
+    "Priority" : 7
+}
+
+
+{
+    "Name" : "encode_atac_GSM3320984_notrim",
+    "Pipeline" : "encode_atac_test",
+    "InputDataSet" : {
+        "WorkflowInput" : {
+            "ATAC.sample_info" : [
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320984_BASAL1_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320984_BASAL1_2.fastq.gz"]],
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320985_BASAL2_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320985_BASAL2_2.fastq.gz"]],
+                [["vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320986_BASAL3_1.fastq.gz","vol2/xtvol@yingyun01:yingyun01/data/fq_reads/ATAC-Seq/GSE118204_science2018/GSM3320986_BASAL3_2.fastq.gz"]]
+            ],
+            "ATAC.sample_name" : ["GSM3320984_BASAL1","GSM3320985_BASAL2","GSM3320986_BASAL3"],
+            "ATAC.Ref_fa" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+            "ATAC.bowtie2_idx_tar" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/bowtie2_index/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.tar",
+            "ATAC.adapters_R1" : ["AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTCAGATGTG","CAAGCAGAAGACGGCATACGAGATCATGCCTAGTCTCGTGGGCTCGGAGATGT","CAAGCAGAAGACGGCATACGAGATCCTCTCTGGTCTCGTGGGCTCGGAGATGT"],
+            "ATAC.adapters_R2" : ["AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTCAGATGTG","CAAGCAGAAGACGGCATACGAGATCATGCCTAGTCTCGTGGGCTCGGAGATGT","CAAGCAGAAGACGGCATACGAGATCCTCTCTGGTCTCGTGGGCTCGGAGATGT"],
+            "ATAC.chrsz" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/hg38.chrom.sizes",
+            "ATAC.blacklist" : "vol2/xtvol@yingyun01:yingyun01/data/refs/encodechip/hg38/hg38.blacklist.bed.gz",
+            "ATAC.gensz" : "hs",
+            "ATAC.paired_end" : true,
+            "ATAC.paired_ends" : [true,true,true],
+            "ATAC.description" : "ChIP-seq on hg38",
+            "ATAC.only_need_trim":false
+        }
+    },
+    "Priority" : 7
+}
